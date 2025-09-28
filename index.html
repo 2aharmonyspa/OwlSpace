@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Owlnest</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    html, body { margin: 0; padding: 0; font-family: "Times New Roman", Times, serif; }
-    h1, h2, h3, h4, h5, h6 { font-family: "Segoe UI", sans-serif; }
-    .section { padding: 16px; }
-    .debug-box { outline: 1px dashed #ccc; margin: 12px 0; padding: 12px; }
-    img { width: 100%; height: auto; display: block; }
-  </style>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
 
-  <div class="section debug-box">
-    <p>If you can read this, text is rendering ✅</p>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Internal CSS for Background Color -->
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    
+    
+    
+<div class="section">
+      <h1>Owlnest</h1>
+      <p class="muted">To unruffle your feathers.</p>
+      <p>Relax.</p>
+    </div>
   </div>
 
-  <!-- Audio -->
-  <div class="section debug-box">
-    <audio controls>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+  <div class="wrap">
+    <!-- Audio -->
+    <div class="section">
+      <audio controls preload="none">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
-  <!-- Image 1 -->
-  <div class="section debug-box">
-    <img src="img_la.jpg" alt="LA"
-         onerror="this.insertAdjacentHTML('afterend','<p style=\'color:red\'>Image img_la.jpg not found ❌</p>'); this.remove();" />
-  </div>
-
-  <!-- Text content -->
-  <div class="section debug-box">
-    <h1>Owlnest</h1>
-    <p>To unruffle your feathers.</p>
-    <p>Relax.</p>
-  </div>
-
-  <!-- Image 2 -->
-  <div class="section debug-box">
-    <img src="screenshot.jpg" alt="Owlnest screenshot"
-         onerror="this.insertAdjacentHTML('afterend','<p style=\'color:red\'>Image screenshot.jpg not found ❌</p>'); this.remove();" />
-  </div>
+    <!-- Image -->
+    <div class="section">
+      <img class="hero-img" src="Screenshotowl.jpg" alt="Owlnest background image" />
+    </div>
+ 
 
 </body>
 </html>
