@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Owlnest</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    html, body {
-      font-family: "Times New Roman", Times, serif;
-      margin: 0;
-      padding: 0;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: "Segoe UI", sans-serif;
-    }
+    html, body { margin: 0; padding: 0; font-family: "Times New Roman", Times, serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: "Segoe UI", sans-serif; }
+    .section { padding: 16px; }
+    .debug-box { outline: 1px dashed #ccc; margin: 12px 0; padding: 12px; }
+    img { width: 100%; height: auto; display: block; }
   </style>
-  <script src=""></script>
 </head>
 <body>
 
- 
-  <audio controls>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <div class="section debug-box">
+    <p>If you can read this, text is rendering ✅</p>
+  </div>
 
- 
- 
+  <!-- Audio -->
+  <div class="section debug-box">
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
 
-  
-  <img src="Screenshotowl.jpg" alt="Owlnest" style="width:100%">
+  <!-- Image 1 -->
+  <div class="section debug-box">
+    <img src="img_la.jpg" alt="LA"
+         onerror="this.insertAdjacentHTML('afterend','<p style=\'color:red\'>Image img_la.jpg not found ❌</p>'); this.remove();" />
+  </div>
 
-  <h1>Owlnest</h1>
-  <p>To unruffle your feathers.</p>
-  <p>Relax.</p>
+  <!-- Text content -->
+  <div class="section debug-box">
+    <h1>Owlnest</h1>
+    <p>To unruffle your feathers.</p>
+    <p>Relax.</p>
+  </div>
+
+  <!-- Image 2 -->
+  <div class="section debug-box">
+    <img src="screenshot.jpg" alt="Owlnest screenshot"
+         onerror="this.insertAdjacentHTML('afterend','<p style=\'color:red\'>Image screenshot.jpg not found ❌</p>'); this.remove();" />
+  </div>
 
 </body>
 </html>
-
